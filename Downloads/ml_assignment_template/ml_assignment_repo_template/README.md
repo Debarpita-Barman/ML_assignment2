@@ -1,6 +1,6 @@
 # Machine Learning Assignment 2 - Decision trees, bagging, boosting (Olivetti faces)
 
-**Name:** YOUR NAME  **Roll no:** 0202  **Seed:** 202 (`int("0202")`)
+**Name:** Debarpita Barman  **Roll no:** P25AI0202  **Seed:** 25202 (`int("0202")`)
 **Final commit hash:** see page 1 of the report (`git rev-parse HEAD`)
 
 ## Contents
