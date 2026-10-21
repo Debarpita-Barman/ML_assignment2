@@ -1,0 +1,13 @@
+{
+  "name": "YOUR NAME",
+  "roll_no": "0202",
+  "seed": 202,
+  "seed_note": "all numeric characters of the roll number, in order, converted with int() (leading zero dropped)",
+  "dataset": "sklearn.datasets.fetch_olivetti_faces(shuffle=False), 400 images, 40 identities, 64x64, raw flattened pixels, no PCA",
+  "split": {"file": "split/split_indices.npz", "per_identity": {"train": 6, "val": 2, "test": 2}},
+  "mask": {"rows": [24, 39], "cols": [24, 39], "value": 0.0, "applied_to": "test set only"},
+  "q1": {"max_depth": [2, 4, 8, 16, null], "min_samples_leaf": [1, 2, 4], "B": [1, 5, 10, 25, 50, 100, 200]},
+  "q2": {"weak_learner_depths": [1, 2, 3, 4], "rounds": [10, 25, 50, 100], "compare_sizes": [25, 50, 100]},
+  "q3": {"n_reps": 30, "depth_experiment_bag_size": 100, "shallow_depth": 2, "deep_depth": null, "resample_file": "split/q3_resample_indices.npy"},
+  "selected_by_validation_only": "see logs/frozen_tree_params.json, logs/final_B.json, logs/q2_frozen_boosting.json"
+}

@@ -1,0 +1,10 @@
+# REPLACE this file with your exact versions before submitting:
+#   pip freeze | findstr /i "numpy scikit-learn pandas matplotlib joblib jupyter nbconvert nbformat ipykernel" > requirements.txt   (Windows)
+numpy
+scikit-learn
+pandas
+matplotlib
+joblib
+jupyter
+nbconvert
+ipykernel

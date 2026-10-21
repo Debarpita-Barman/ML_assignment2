@@ -1,0 +1,51 @@
+% CVPR two-column report skeleton. Copy cvpr.sty, ieeenat_fullname.bst (author kit) next to this file.
+% Do NOT use the [review] option, otherwise author names are hidden. Check the exact option names in the kit you download.
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage{cvpr}
+\usepackage{times,epsfig,graphicx,amsmath,amssymb,booktabs}
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+\begin{document}
+
+\title{Decision Trees, Bagging and Boosting on Olivetti Faces: Baselines, Robustness and Bias--Variance}
+
+\author{YOUR NAME \\
+Roll No.: 0202 \\
+Repository: \url{https://github.com/USER/REPO} \\
+Final commit: \texttt{PASTE-40-CHARACTER-HASH-HERE}}
+
+\maketitle
+
+\begin{abstract}
+One paragraph: data and protocol (seed 202, 6/2/2 per-identity split, raw pixels, masked test set), models (tree, own bagging, own SAMME) and the main findings.
+\end{abstract}
+
+\section{Setup}
+Seed, split, masked test set, selection rules (validation only, tie-breaks), class vectors used for confidence, hardware.
+
+\section{Q1: Decision tree and bagging}
+\subsection{Single tree (a)}   % table + figures/q1a_depth.pdf + explanation of depth
+\subsection{Bagging (b)}       % table from logs/q1bc_bagging.csv, distinct examples vs 151.9
+\subsection{OOB, disagreement, margin (c)}   % figures/q1c_oob_disagree_margin.pdf, final B
+\subsection{Clean vs masked, case study (d)} % table + four faces
+
+\section{Q2: Boosting}
+\subsection{SAMME round on a toy problem (a)}
+\subsection{Selection and weight diagnostics (b)}
+\subsection{Boosting vs bagging, heavy face (c)}
+\subsection{Clean vs masked (d)}
+
+\section{Q3: Bias and variance}
+\subsection{Selected models (a)}
+\subsection{Depth sweep (b)}
+\subsection{Where does bagging help most? (c)}
+\subsection{Final table and stability (d)}
+
+\section{Conclusion}
+
+{\small
+\bibliographystyle{ieeenat_fullname}
+\bibliography{refs}
+}
+
+\end{document}
